@@ -6,9 +6,12 @@ import {RouterModule, Routes} from '@angular/router';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { LoginComponent } from './login/login.component';
+import { ListviewComponent } from './listview/listview.component';
+import { ListItemComponent } from './listview/list-item/list-item.component';
 
 const appRoutes = [
   {path: "dashboard", component:DashboardComponent},
+  {path: "lists", component:ListviewComponent},
   { path: '', component: LoginComponent }
 ]
 
@@ -17,7 +20,9 @@ const appRoutes = [
   declarations: [
     AppComponent,
     DashboardComponent,
-    LoginComponent
+    LoginComponent,
+    ListviewComponent,
+    ListItemComponent
   ],
   imports: [
     BrowserModule,
@@ -27,4 +32,4 @@ const appRoutes = [
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule{ }

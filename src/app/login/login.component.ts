@@ -29,6 +29,6 @@ onPasswordChange(event:Event){
     console.log(this.psw);
     // alert(this.userName);
 
-    this.router.navigate(['/dashboard']);
+    this.router.navigate(['/lists']);
   }
 }
